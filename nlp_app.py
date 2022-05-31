@@ -10,7 +10,7 @@ import pickle
 
 import streamlit as st
 
-with open('Model/tokenizer2.pickle', 'rb') as handle:
+with open('model/tokenizer2.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 vocab_size = 10000
 embedding_dim = 16
@@ -19,7 +19,7 @@ trunc_type='post'
 padding_type='post'
 oov_tok = "<OOV>"
 
-model = load_model('Model/my_model_old.h5')
+model = load_model('model/my_model_old.h5')
 
 def welcome():
     return "Welcome All"
