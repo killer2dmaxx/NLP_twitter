@@ -32,7 +32,7 @@ def predict(sentence ,tokenizer, max_length, padding_type, trunc_type):
     
 def main():
     st.title("NLP Sentiment Recognition")
-    st.subheader("Twitter US Airline Sentiment")
+    st.subheader("Twitter US Airline Sentiment Dataset")
     sente = st.text_area('Text to analyze',placeholder="Type Here")
     sentence = [sente]
     result=""
